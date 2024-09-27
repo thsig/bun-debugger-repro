@@ -1,0 +1,26 @@
+{
+  "name": "cli",
+  "version": "0.1.1",
+  "type": "module",
+  "exports": {
+    ".": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "bin": {
+    "cli": "./build/bin.js"
+  },
+  "dependencies": {
+    "sdk": "workspace:../sdk"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.8",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "tsc --build .",
+    "build-bun": "bun build index.ts --target=bun --sourcemap=linked --outdir build --outfile build/index.js",
+    "clean": "shx rm -rf build"
+  }
+}

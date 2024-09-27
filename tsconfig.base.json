@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "noEmit": false,
+    "composite": true,
+    "allowUnreachableCode": false,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "ESNext",
+    "verbatimModuleSyntax": true,
+    "allowJs": false,
+    // Strict type checking options below. All options that are part of the `strict` group are enabled by
+    // default and not listed separately.
+    "strict": true,
+    // Enable other strict type checking options (not part of the `strict` rule group).
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "stripInternal": true,
+    "preserveSymlinks": true,
+    "types": [
+      "bun"
+    ]
+  }
+}

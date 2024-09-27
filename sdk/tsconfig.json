@@ -1,0 +1,16 @@
+{
+ "extends": "../tsconfig.base.json",
+  "include": [
+    "./**/*.ts",
+    "index.ts",
+    "package.json"
+  ],
+  "exclude": [
+    "build/**/*"
+  ],
+  "compilerOptions": {
+    "outDir": "build",
+    // FIXME: Can we get rid of this one?
+    // "strictFunctionTypes": false
+  }
+}

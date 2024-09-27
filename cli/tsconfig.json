@@ -1,0 +1,21 @@
+{
+  // TODO be-strict: Use `../tsconfig.base.json` instead.
+  "extends": "../tsconfig.base.json",
+  "include": [
+    "./**/*.ts",
+    // "../grow-platform/api/src/routes/app",
+    "package.json"
+  ],
+  "exclude": [
+    "build/**/*",
+    // "../testdata/**/*"
+  ],
+  "compilerOptions": {
+    "outDir": "build"
+  },
+  "references": [
+    {
+      "path": "../sdk"
+    }
+  ]
+}

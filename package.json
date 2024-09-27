@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "version": "0.1.1",
+  "type": "module",
+  "workspaces": [
+    "cli",
+    "sdk"
+  ],
+  "devDependencies": {
+    "shx": "0.3.4"
+  },
+  "scripts": {
+    "build": "bun --filter '*' build",
+    "clean": "bun --filter '*' clean"
+  }
+}
